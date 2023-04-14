@@ -1,0 +1,10 @@
+body{
+    background-color: red;
+}
+
+#navbar{
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    padding: 0px;
+}
