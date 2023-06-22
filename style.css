@@ -1,0 +1,268 @@
+/* Margin Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Navbar */
+nav{
+    position: sticky;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.75;
+}
+.logo{
+    margin: 10px;
+    padding:34px;
+}
+
+#navbar img{
+    height: 64px;
+    border: 2px solid transparent;
+    border-radius: 500px;
+
+}
+#navbar img:hover{
+    cursor: pointer;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    margin: 12px 20px;
+    list-style: none;
+}
+
+#navbar li a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+    padding: 12px;
+    border-radius: 12px;
+    background-color: transparent;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+#navbar li a:hover{
+    background-color: pink;
+    color: black;
+}
+
+/* home */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 106px;
+    flex-direction: column;
+}
+
+.home::before{
+    content: "";
+    background: url('../bg.jpg') center center;
+    position: absolute;
+    height: 510px;
+    width: 100vw;
+    z-index: -1;
+    opacity: 80%;
+}
+
+.h-primary{
+    
+    text-align: center;
+    font-size: 5rem;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    padding-bottom: 12px;
+    
+}
+
+.h-primary:hover{
+    transform: scale(1.2);
+}
+
+.home p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+/* menu content  */
+#menu{
+    margin: 64px;
+    display: flex;
+    height: 450px;
+}
+.box{
+    /* border: 2px solid rgb(255, 255, 255); */
+    margin: 130px 55px;
+    padding: 34px;
+    border-radius: 23PX;
+    margin-bottom: 20px;
+}
+
+.box img{
+    width: 250px;
+    height: 180.6px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.box img:hover{
+    transform: scale(1.4);
+}
+
+.box h2{
+    padding: 19px;
+    text-align: center;
+}
+
+.box p{
+    padding: 12px;
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 12px;
+    margin-top: 100px;
+    border-radius: 12px;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(68, 67, 65);
+    border-color: rgb(68, 67, 65);
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+#clients img{
+    width: 100px;
+    height: 100px;
+    padding:5px 20px;
+    cursor:pointer;
+}
+
+#clients h1{
+    padding: 34px;
+    font-size: 4rem;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 85px;
+    padding-bottom: 20px;
+}
+#contact::before{
+    content: "";
+    width: 100%;
+    height: 103%;
+    background: url(/contact.jpg) center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact h1{
+    padding: 34px;
+    font-size: 4rem;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form label{
+    font-size: 1.5rem;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.form input, .form textarea{
+    width: 600px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 12px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    opacity: 0.7;
+
+}
+
+#submit{
+    padding: 12px;
+    margin: 12px 0px;
+    font-size: 18px;
+    width: 100px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+#submit:hover{
+    background-color: rgb(68, 67, 65);
+    color: white;
+    outline: none;
+}
